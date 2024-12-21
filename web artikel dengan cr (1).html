@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku</title>
+    <style>
+        /* CSS: Gaya halaman */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+        article {
+            margin-top: 20px;
+        }
+        article h3 {
+            color: #333;
+        }
+        article p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Websiteku</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#article">Artikel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Beranda</h2>
+        <p>Ini adalah halaman beranda.</p>
+    </section>
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya sedang belajar membuat website. Menarik, kan?</p>
+    </section>
+    <section id="contact">
+        <h2>Kontak</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+    <section id="article">
+        <h2>Artikel: Cara Membuat Website untuk Pemula</h2>
+        <article>
+            <h3>Langkah 1: Belajar Dasar HTML</h3>
+            <p>HTML adalah bahasa dasar untuk membuat struktur halaman web. Anda perlu memahami elemen seperti <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, dan <code>&lt;a&gt;</code>.</p>
+        </article>
+        <article>
+            <h3>Langkah 2: Menambahkan Gaya dengan CSS</h3>
+            <p>CSS digunakan untuk mempercantik tampilan web. Anda bisa mengatur warna, tata letak, dan bahkan animasi.</p>
+        </article>
+        <article>
+            <h3>Langkah 3: Interaktivitas dengan JavaScript</h3>
+            <p>JavaScript membantu Anda menambahkan interaktivitas, seperti tombol yang dapat diklik atau formulir yang divalidasi.</p>
+        </article>
+        <p><strong>Sumber:</strong> Panduan ini dibuat berdasarkan pengalaman belajar dan eksplorasi mandiri.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dibuat oleh <a href="https://github.com/BlazzzAsNicholoFabiano" target="_blank">Andi Febrian</a>. Semua Hak Dilindungi.</p>
+    </footer>
+    <script>
+        // JavaScript: Interaktivitas form
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            if (name) {
+                alert(Terima kasih, ${name}, form Anda telah dikirim!);
+            } else {
+                alert("Nama tidak boleh kosong!");
+            }
+        });
+    </script>
+</body>
+</html>
